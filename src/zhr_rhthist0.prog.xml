@@ -1,0 +1,2775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZHR_RHTHIST0</NAME>
+    <DBAPL>H</DBAPL>
+    <DBNA>PC</DBNA>
+    <TYPE>900</TYPE>
+    <SUBC>1</SUBC>
+    <APPL>H</APPL>
+    <RSTAT>P</RSTAT>
+    <RLOAD>D</RLOAD>
+    <LDBNAME>PCH</LDBNAME>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <CUA>
+    <ADM>
+     <ACTCODE>0002</ACTCODE>
+     <MENCODE>000005</MENCODE>
+     <PFKCODE>0001</PFKCODE>
+    </ADM>
+    <STA>
+     <RSMPE_STAT>
+      <CODE>HIST</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>0002</ACTCODE>
+      <PFKCODE>0001</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>Training history per attendee</INT_NOTE>
+     </RSMPE_STAT>
+    </STA>
+    <FUN>
+     <RSMPE_FUNT>
+      <CODE>%EX</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Exit</FUN_TEXT>
+      <PATH>X</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%PC</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Download</FUN_TEXT>
+      <PATH>O</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SC</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SEARCH</TEXT_NAME>
+      <ICON_ID>@13@</ICON_ID>
+      <FUN_TEXT>Find</FUN_TEXT>
+      <PATH>F</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SC+</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SEARCH_NEXT</TEXT_NAME>
+      <ICON_ID>@4E@</ICON_ID>
+      <FUN_TEXT>Find next</FUN_TEXT>
+      <PATH>X</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>ADAI</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Key +/-</FUN_TEXT>
+      <PATH>K</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Back</FUN_TEXT>
+      <PATH>B</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>DPAB</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Schedule model</FUN_TEXT>
+      <PATH>D</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>OPAB</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Schedule</FUN_TEXT>
+      <PATH>S</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P+</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_NEXT_PAGE</TEXT_NAME>
+      <ICON_ID>@30@</ICON_ID>
+      <FUN_TEXT>Next page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P++</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_LAST_PAGE</TEXT_NAME>
+      <ICON_ID>@31@</ICON_ID>
+      <FUN_TEXT>Last page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P-</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_PREVIOUS_PAGE</TEXT_NAME>
+      <ICON_ID>@2Z@</ICON_ID>
+      <FUN_TEXT>Previous page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P--</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_FIRST_PAGE</TEXT_NAME>
+      <ICON_ID>@2Y@</ICON_ID>
+      <FUN_TEXT>First page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>PICK</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SELECT_DETAIL</TEXT_NAME>
+      <ICON_ID>@16@</ICON_ID>
+      <FUN_TEXT>Choose</FUN_TEXT>
+      <PATH>H</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>PRI</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_PRINT</TEXT_NAME>
+      <ICON_ID>@0X@</ICON_ID>
+      <FUN_TEXT>Print</FUN_TEXT>
+      <PATH>P</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>QUAL</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_LIST</TEXT_NAME>
+      <ICON_ID>@3W@</ICON_ID>
+      <FUN_TEXT>Qualifications</FUN_TEXT>
+      <PATH>Q</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>RW</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>Cancel</FUN_TEXT>
+      <PATH>A</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>TICK</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_INFORMATION</TEXT_NAME>
+      <ICON_ID>@0S@</ICON_ID>
+      <FUN_TEXT>Object info</FUN_TEXT>
+      <PATH>O</PATH>
+     </RSMPE_FUNT>
+    </FUN>
+    <MEN>
+     <RSMPE_MEN>
+      <CODE>000005</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>ADAI</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0001</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>PRI</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0001</CODE>
+      <NO>02</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%PC</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0001</CODE>
+      <NO>03</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%EX</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0002</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>RW</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0003</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>BACK</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0004</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>QUAL</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0004</CODE>
+      <NO>02</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>OPAB</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0004</CODE>
+      <NO>03</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>DPAB</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0004</CODE>
+      <NO>04</NO>
+      <REF_TYPE>S</REF_TYPE>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>0004</CODE>
+      <NO>05</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>TICK</REF_CODE>
+      <REF_NO>01</REF_NO>
+     </RSMPE_MEN>
+    </MEN>
+    <MTX>
+     <RSMPE_MNLT>
+      <CODE>000005</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>View</TEXT>
+      <PATH>V</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>0001</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>History</TEXT>
+      <PATH>T</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>0002</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Edit</TEXT>
+      <PATH>E</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>0003</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Goto</TEXT>
+      <PATH>G</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>0004</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Information</TEXT>
+      <PATH>I</PATH>
+     </RSMPE_MNLT>
+    </MTX>
+    <ACT>
+     <RSMPE_ACT>
+      <CODE>0002</CODE>
+      <NO>01</NO>
+      <MENUCODE>0001</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>0002</CODE>
+      <NO>02</NO>
+      <MENUCODE>0002</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>0002</CODE>
+      <NO>03</NO>
+      <MENUCODE>0003</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>0002</CODE>
+      <NO>04</NO>
+      <MENUCODE>0004</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>0002</CODE>
+      <NO>05</NO>
+      <MENUCODE>000005</MENUCODE>
+     </RSMPE_ACT>
+    </ACT>
+    <BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>0001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>01</NO>
+      <PFNO>17</PFNO>
+     </RSMPE_BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>0001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>02</NO>
+      <PFNO>05</PFNO>
+     </RSMPE_BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>0001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>03</NO>
+      <PFNO>08</PFNO>
+     </RSMPE_BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>0001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>04</NO>
+      <PFNO>06</PFNO>
+     </RSMPE_BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>0001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>05</NO>
+      <PFNO>07</PFNO>
+     </RSMPE_BUT>
+    </BUT>
+    <PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>02</PFNO>
+      <FUNCODE>PICK</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>05</PFNO>
+      <FUNCODE>ADAI</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>06</PFNO>
+      <FUNCODE>OPAB</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>07</PFNO>
+      <FUNCODE>DPAB</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>08</PFNO>
+      <FUNCODE>QUAL</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>RW</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>13</PFNO>
+      <FUNCODE>PRI</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>%EX</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>17</PFNO>
+      <FUNCODE>TICK</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>20</PFNO>
+      <FUNCODE>%PC</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>21</PFNO>
+      <FUNCODE>P--</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>22</PFNO>
+      <FUNCODE>P-</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>23</PFNO>
+      <FUNCODE>P+</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>24</PFNO>
+      <FUNCODE>P++</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>71</PFNO>
+      <FUNCODE>%SC</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>80</PFNO>
+      <FUNCODE>P--</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>81</PFNO>
+      <FUNCODE>P-</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>82</PFNO>
+      <FUNCODE>P+</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>83</PFNO>
+      <FUNCODE>P++</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>84</PFNO>
+      <FUNCODE>%SC+</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>86</PFNO>
+      <FUNCODE>PRI</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+    </PFK>
+    <SET>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>%EX</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>%PC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>%SC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>%SC+</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>ADAI</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>DPAB</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>OPAB</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>P+</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>P++</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>P-</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>P--</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>PICK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>PRI</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>QUAL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>RW</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>HIST</STATUS>
+      <FUNCTION>TICK</FUNCTION>
+     </RSMPE_STAF>
+    </SET>
+    <DOC>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>A</OBJ_TYPE>
+      <OBJ_CODE>0002</OBJ_CODE>
+      <MODAL>D</MODAL>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>0001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <NORM>X</NORM>
+     </RSMPE_ATRT>
+    </DOC>
+   </CUA>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>070</KEY>
+     <ENTRY>Res.type</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>069</KEY>
+     <ENTRY>Resource type</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>068</KEY>
+     <ENTRY>Resource type</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>067</KEY>
+     <ENTRY>Name Resource Type</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>066</KEY>
+     <ENTRY>Abbreviation Resource Type</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>065</KEY>
+     <ENTRY>Object ID Resource Type</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>064</KEY>
+     <ENTRY>Object type Resource Type</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>063</KEY>
+     <ENTRY>Prerequisite</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>062</KEY>
+     <ENTRY>Prerequisite</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>061</KEY>
+     <ENTRY>Prerequisite</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>060</KEY>
+     <ENTRY>Name Prerequisite</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>059</KEY>
+     <ENTRY>Abbreviation Prerequisite</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>058</KEY>
+     <ENTRY>Object ID Prerequisite</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>057</KEY>
+     <ENTRY>Object type Prerequisite</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>056</KEY>
+     <ENTRY>Qualif.</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>055</KEY>
+     <ENTRY>Qualification</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>054</KEY>
+     <ENTRY>Qualification</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>053</KEY>
+     <ENTRY>Name Qualification</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>052</KEY>
+     <ENTRY>Abbreviation Qualification</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>051</KEY>
+     <ENTRY>Object ID Qualification</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>050</KEY>
+     <ENTRY>Object type Qualification</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>049</KEY>
+     <ENTRY>Instructor</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>048</KEY>
+     <ENTRY>Instructor</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Training History</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>TIM</KEY>
+     <ENTRY>Selection period</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>091</KEY>
+     <ENTRY>Org.assgmt</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>090</KEY>
+     <ENTRY>Org. assignment</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>089</KEY>
+     <ENTRY>Organizational assignment</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>088</KEY>
+     <ENTRY>Name Organizational Assignment</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>087</KEY>
+     <ENTRY>Abbreviation Organizational Assignment</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>086</KEY>
+     <ENTRY>Object ID Organizational Assignment</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>085</KEY>
+     <ENTRY>Object type Organizational Assignment</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>084</KEY>
+     <ENTRY>Owner</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>083</KEY>
+     <ENTRY>Event owner</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>082</KEY>
+     <ENTRY>Event owner</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>081</KEY>
+     <ENTRY>Name Event Owner</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>080</KEY>
+     <ENTRY>Abbreviation Event Owner</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>079</KEY>
+     <ENTRY>Object ID Event Owner</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>078</KEY>
+     <ENTRY>Object type Event Owner</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>077</KEY>
+     <ENTRY>Resource</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>076</KEY>
+     <ENTRY>Resource</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>075</KEY>
+     <ENTRY>Resource</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>074</KEY>
+     <ENTRY>Name Resource</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>073</KEY>
+     <ENTRY>Abbreviation Resource</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>072</KEY>
+     <ENTRY>Object ID Resource</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>071</KEY>
+     <ENTRY>Object type Resource</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>047</KEY>
+     <ENTRY>Instructor</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>023</KEY>
+     <ENTRY>Object ID Business Event Location</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>022</KEY>
+     <ENTRY>Object type Business Event Location</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>021</KEY>
+     <ENTRY>Bus. event</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>020</KEY>
+     <ENTRY>Business event</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>019</KEY>
+     <ENTRY>Business event</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>Business Event name</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>Abbreviation Business Event</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>Object ID Business Event</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>Object type Business Event</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>014</KEY>
+     <ENTRY>EType</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>Business event type</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Business event type</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>Business event type name</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Abbreviation Business Event Type</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Object ID Business Event Type</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Object type Business Event Type</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Evt Group</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Business event group</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Business event group</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Business Event Group Name</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Abbreviation Business Event Group</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Object ID Business Event Group</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Object type Business Event Group</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>046</KEY>
+     <ENTRY>Name Instructor</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>045</KEY>
+     <ENTRY>Abbreviation Instructor</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>044</KEY>
+     <ENTRY>Object ID Instructor</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>043</KEY>
+     <ENTRY>Object type Instructor</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>042</KEY>
+     <ENTRY>Attendee</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>041</KEY>
+     <ENTRY>Attendee</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>040</KEY>
+     <ENTRY>Attendee</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>039</KEY>
+     <ENTRY>Name Attendee</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>038</KEY>
+     <ENTRY>Abbreviation Attendee</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>037</KEY>
+     <ENTRY>Object ID Attendee</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>036</KEY>
+     <ENTRY>Object type Attendee</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>035</KEY>
+     <ENTRY>Organizer</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>034</KEY>
+     <ENTRY>Organizer</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>033</KEY>
+     <ENTRY>Organizer</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>032</KEY>
+     <ENTRY>Name Organizer</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>031</KEY>
+     <ENTRY>Abbreviation Organizer</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>030</KEY>
+     <ENTRY>Object ID Organizer</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>029</KEY>
+     <ENTRY>Object type Organizer</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>028</KEY>
+     <ENTRY>Location</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>027</KEY>
+     <ENTRY>Location</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>026</KEY>
+     <ENTRY>Business Event Location</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>025</KEY>
+     <ENTRY>Name Business Event Location</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>024</KEY>
+     <ENTRY>Abbreviation Business Event Location</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>060</KEY>
+       <ENTRY>Denominação pré-requisitos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>061</KEY>
+       <ENTRY>Pré-requisitos</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>062</KEY>
+       <ENTRY>Pré-requisitos</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>063</KEY>
+       <ENTRY>Pré-requisitos</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>064</KEY>
+       <ENTRY>Tipo de objeto tipo de recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>065</KEY>
+       <ENTRY>ID objeto tipo de recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>066</KEY>
+       <ENTRY>Abreviatura tipo de recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>067</KEY>
+       <ENTRY>Denominação tipo de recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>068</KEY>
+       <ENTRY>Tipo de recurso</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>069</KEY>
+       <ENTRY>Tipo de recurso</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>070</KEY>
+       <ENTRY>Tp.recurs.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>059</KEY>
+       <ENTRY>Abreviatura pré-requisitos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>058</KEY>
+       <ENTRY>ID objeto pré-requisitos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>057</KEY>
+       <ENTRY>Tipo de objeto pré-requisitos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>056</KEY>
+       <ENTRY>Qualif.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>055</KEY>
+       <ENTRY>Qualificação</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>054</KEY>
+       <ENTRY>Qualificação</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>053</KEY>
+       <ENTRY>Denominação qualificação</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>052</KEY>
+       <ENTRY>Abreviatura qualificação</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>051</KEY>
+       <ENTRY>ID objeto qualificação</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>050</KEY>
+       <ENTRY>Tipo de objeto qualificação</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>049</KEY>
+       <ENTRY>Instrutor</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>048</KEY>
+       <ENTRY>Instrutor</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Histórico formação</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>TIM</KEY>
+       <ENTRY>Período seleção</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>091</KEY>
+       <ENTRY>Atrib.org.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>090</KEY>
+       <ENTRY>Atribuição organiz.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>089</KEY>
+       <ENTRY>Atribuição organizacional</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>088</KEY>
+       <ENTRY>Denominação atribuição organizacional</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>087</KEY>
+       <ENTRY>Abreviatura atribuição organizacional</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>086</KEY>
+       <ENTRY>ID objeto atribuição organizacional</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>085</KEY>
+       <ENTRY>Tipo de objeto atribuição organizacional</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>084</KEY>
+       <ENTRY>Responsáv.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>083</KEY>
+       <ENTRY>Responsável</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>082</KEY>
+       <ENTRY>Responsável</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>081</KEY>
+       <ENTRY>Denominação responsável</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>080</KEY>
+       <ENTRY>Abreviatura responsável</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>079</KEY>
+       <ENTRY>ID objeto responsável</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>078</KEY>
+       <ENTRY>Tipo de objeto responsável</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>077</KEY>
+       <ENTRY>Recurso</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>076</KEY>
+       <ENTRY>Recurso</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>075</KEY>
+       <ENTRY>Recurso</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>074</KEY>
+       <ENTRY>Denominação recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>073</KEY>
+       <ENTRY>Atreviatura recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>072</KEY>
+       <ENTRY>ID objeto recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>071</KEY>
+       <ENTRY>Tipo de objeto recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>047</KEY>
+       <ENTRY>Instrutor</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>023</KEY>
+       <ENTRY>ID objeto local evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>022</KEY>
+       <ENTRY>Tipo de objeto local evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>021</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>Denominação evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>Abreviatura evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>ID objeto evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>Tipo de objeto evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Tipo de evento</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Tipo de evento</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Tipo de evento</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Denominação tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Abreviatura tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>ID objeto tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Tipo de objeto tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Grupo de evento</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Grupo de evento</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Grupo de evento</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Denominação grupo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Abreviatura grupo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>ID objeto grupo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Tipo de objeto grupo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>046</KEY>
+       <ENTRY>Abreviatura instrutor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>045</KEY>
+       <ENTRY>Abreviatura instrutor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>044</KEY>
+       <ENTRY>ID objeto instrutor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>043</KEY>
+       <ENTRY>Tipo de objeto instrutor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>042</KEY>
+       <ENTRY>Part.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>041</KEY>
+       <ENTRY>Participantes</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>040</KEY>
+       <ENTRY>Participantes</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>039</KEY>
+       <ENTRY>Denominação participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>038</KEY>
+       <ENTRY>Abreviatura participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>037</KEY>
+       <ENTRY>ID objeto participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>036</KEY>
+       <ENTRY>Tipo de objeto participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>035</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>024</KEY>
+       <ENTRY>Abreviatura local evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>025</KEY>
+       <ENTRY>Denominação local evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>026</KEY>
+       <ENTRY>Local do evento</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>027</KEY>
+       <ENTRY>Local do evento</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>028</KEY>
+       <ENTRY>LocalEvent</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>029</KEY>
+       <ENTRY>Tipo de objeto organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>030</KEY>
+       <ENTRY>ID objeto organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>031</KEY>
+       <ENTRY>Abreviatura organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>032</KEY>
+       <ENTRY>Denominação organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>033</KEY>
+       <ENTRY>Organizador</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>034</KEY>
+       <ENTRY>Organizador</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Tipo de objeto de grupo de eventos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>ID de objeto de grupo de eventos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Abreviatura de grupo de eventos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Denominación Grupo de eventos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Grupo de actos</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Grupo de actos</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>GpoEventos</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Tipo de objeto tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>ID de objeto de tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Clave tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Denominación tipo de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Tipo de evento</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Tipo de evento</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Tp.evento</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>Tipo de objeto evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>ID de objeto evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>Clave evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>Denominación evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>021</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>022</KEY>
+       <ENTRY>Tipo de objeto de sede de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>023</KEY>
+       <ENTRY>ID de objeto de sede de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>024</KEY>
+       <ENTRY>Clave de sede de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>025</KEY>
+       <ENTRY>Denominación Sede de evento</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>026</KEY>
+       <ENTRY>Sede del evento</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>027</KEY>
+       <ENTRY>Sede del evento</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>028</KEY>
+       <ENTRY>SedeEvento</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>029</KEY>
+       <ENTRY>Tp.objeto organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>030</KEY>
+       <ENTRY>ID de objeto Organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>031</KEY>
+       <ENTRY>Clave organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>032</KEY>
+       <ENTRY>Denominación organizador</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>033</KEY>
+       <ENTRY>Organizador</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>034</KEY>
+       <ENTRY>Organizador</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>035</KEY>
+       <ENTRY>Evento</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>036</KEY>
+       <ENTRY>Tipo de objeto Participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>037</KEY>
+       <ENTRY>ID de objeto Participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>038</KEY>
+       <ENTRY>Clave Participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>039</KEY>
+       <ENTRY>Denominación Participante</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>040</KEY>
+       <ENTRY>Participante</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>041</KEY>
+       <ENTRY>Participante</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>042</KEY>
+       <ENTRY>Part.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>043</KEY>
+       <ENTRY>Tipo de objeto Instructor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>044</KEY>
+       <ENTRY>ID de objeto Instructor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>045</KEY>
+       <ENTRY>Clave Instructor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>046</KEY>
+       <ENTRY>Denominación Instructor</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>047</KEY>
+       <ENTRY>Instructor</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>048</KEY>
+       <ENTRY>Instructor</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>049</KEY>
+       <ENTRY>Instructor</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>050</KEY>
+       <ENTRY>Tipo de objeto Cualificación</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>051</KEY>
+       <ENTRY>ID de objeto Cualificación</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>052</KEY>
+       <ENTRY>Clave Cualificación</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>053</KEY>
+       <ENTRY>Denominación Cualificación</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>054</KEY>
+       <ENTRY>Cualificación</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>055</KEY>
+       <ENTRY>Cualificación</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>056</KEY>
+       <ENTRY>Cualific.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>057</KEY>
+       <ENTRY>Tipo de objeto Condición previa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>058</KEY>
+       <ENTRY>ID de objeto Condición previa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>059</KEY>
+       <ENTRY>Clave Condición previa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>060</KEY>
+       <ENTRY>Denominación Condición previa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>061</KEY>
+       <ENTRY>Condición previa</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>062</KEY>
+       <ENTRY>Condición previa</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>063</KEY>
+       <ENTRY>Cond.prev.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>064</KEY>
+       <ENTRY>Tipo de objeto Tipo de recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>065</KEY>
+       <ENTRY>ID de objeto Tipo de recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>066</KEY>
+       <ENTRY>Clave Tipo de recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>067</KEY>
+       <ENTRY>Denominación Tipo de recurso</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>068</KEY>
+       <ENTRY>Tipo de recurso</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>069</KEY>
+       <ENTRY>Tipo de recurso</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>070</KEY>
+       <ENTRY>Tipo rec.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>071</KEY>
+       <ENTRY>Tipo de objeto Recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>072</KEY>
+       <ENTRY>ID de objeto Recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>073</KEY>
+       <ENTRY>Clave Recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>074</KEY>
+       <ENTRY>Denominación Recursos</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>075</KEY>
+       <ENTRY>Recursos</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>076</KEY>
+       <ENTRY>Recursos</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>077</KEY>
+       <ENTRY>Recursos</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>078</KEY>
+       <ENTRY>Tipo de objeto Responsable</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>079</KEY>
+       <ENTRY>ID de objeto Responsable</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>080</KEY>
+       <ENTRY>Clave Responsable</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>081</KEY>
+       <ENTRY>Denominación Responsable</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>082</KEY>
+       <ENTRY>Responsable</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>083</KEY>
+       <ENTRY>Responsable</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>084</KEY>
+       <ENTRY>Respons.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>085</KEY>
+       <ENTRY>Tipo de objeto Asignación organizativa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>086</KEY>
+       <ENTRY>ID de objeto Asignación organizativa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>087</KEY>
+       <ENTRY>Clave Asignación organizativa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>088</KEY>
+       <ENTRY>Denominación Asignación organizativa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>089</KEY>
+       <ENTRY>Asig.organiz.</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>090</KEY>
+       <ENTRY>Asig.organiz.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>091</KEY>
+       <ENTRY>Asign.org.</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>TIM</KEY>
+       <ENTRY>Período de selección</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Historial de formación</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHTHIST0</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0017</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00030</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHTHIST0</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00017</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit diesem Report können Sie die Ausbildungshistorie eines internen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>oder externen Teilnehmers erstellen, d.h. eine Liste aller</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Veranstaltungen, die der betreffende Teilnehmer besucht hat und/oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf die er gebucht ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zu diesem Report gibt es einen Vorreport RHXTHIST mit vereinfachtem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Selektionsbild.</TDLINE>
+      </TLINE>
+      <TLINE/>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Auf dem Selektionsbild können Sie die &lt;ZH&gt;auszuwertenden Objekte&lt;/&gt; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>den &lt;ZH&gt;Auswertungszeitraum&lt;/&gt; auswählen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das durch den Report erstellte &lt;ZH&gt;Listbild&lt;/&gt; enthält beispielsweise</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>folgende Informationen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Bezeichnung der besuchten Veranstaltungstypen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Bezeichnung der besuchten Veranstaltungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Veranstaltungstermine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Veranstaltungseinzelpreis pro Person</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Weiterbildungsgesamtkosten pro Teilnehmer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Welche Daten Sie angezeigt bekommen, können Sie unter &lt;LS&gt;Layout ändern</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; einstellen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In dem durch Wahl dieser Funktion aufgerufenen Dialogfenster werden in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der linken Tabelle die im Listbild angezeigten Spalten aufgeführt, in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der rechten Tabelle die ausgeblendeten Spalten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Durch Markieren und Betätigen der Pfeiltasten können Sie bestimmen,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>welche Spalten angezeigt werden. Durch &lt;LS&gt;Übernehmen&lt;/&gt; können Sie die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>von Ihnen gemachten Änderungen anzeigen lassen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Über &lt;LS&gt;Sichern&lt;/&gt; können Sie dieses Layout speichern und nach</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verändern der Anzeige über &lt;LS&gt;Layout auswählen&lt;/&gt; nach Belieben wieder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufrufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Informationen zu den Anzeigemöglichkeiten im Listbild finden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sie unter &lt;LS&gt;Hilfe&lt;/&gt; in der SAP Bibliothek unter &lt;LS&gt;Einführung in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>das SAP System&lt;/&gt; -&gt; &lt;LS&gt;Das SAP Fenster&lt;/&gt; -&gt; &lt;LS&gt;Liste&lt;/&gt; -&gt; &lt;LS&gt;ABAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>List Viewer (ALV): Grid Control&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHTHIST0</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0017</VERSION>
+      <TXTLINES>00025</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHTHIST0</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00017</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This report creates a training history for an internal or external</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>attendee. A training history is a list of all training and education</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>events that the attendee already has attended or is booked to attend.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The report has a pre-report RHXTHIST with a simplified selection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The report output depends on the &lt;ZH&gt;objects selected for reporting&lt;/&gt;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>on the &lt;ZH&gt;reporting period&lt;/&gt;, and on the report parameters you set.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>screen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The report&apos;s &lt;zh&gt;list screen&lt;/&gt; can contain the following information:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Name of business event types attended</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Name of business events attended</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Business event dates</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Individual price per person</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Sum total of further training costs per attendee</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You select the data you want displayed under &lt;LS&gt;Change layout&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>When you choose this function, a dialog box appears with the columns</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>that are displayed on the list screen in the left table, and the hidden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>columns in the right table.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The arrows let you determine what columns are displayed. To transfer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the changed layout, choose &lt;LS&gt;Transfer&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To save the layout, choose &lt;LS&gt;Save layout&lt;/&gt;. You can call this layout</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>as required by choosing &lt;LS&gt;Choose layout&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can find more information about display options on the list screen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>under &lt;LS&gt;Help&lt;/&gt; in the SAP Library by choosing &lt;LS&gt;Getting Started&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>-&gt; &lt;LS&gt;The SAP Window&lt;/&gt; -&gt; &lt;LS&gt;List&lt;/&gt; -&gt; &lt;LS&gt;ABAP List Viewer (ALV):</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Grid Control&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHTHIST0</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0017</VERSION>
+      <TXTLINES>00027</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHTHIST0</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00017</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Com este report é possível criar o histórico de formação de um</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>participante interno ou externo, ou seja, uma lista de todos os eventos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>freqüentados pelo participante em questão e/ou nos quais está inscrito.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para este report existe um report prévio RHXTHIST com tela de seleção</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>simplificada.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Na tela de seleção é possível selecionar os &lt;ZH&gt;Objetos a serem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>analisados&lt;/&gt; e &lt;ZH&gt;Período de análise&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A &lt;LS&gt;exibição em lista&lt;/&gt; gerada pelo report contém, por exemplo, as</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>seguintes informações:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Denominação dos tipos de eventos freqüentados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Denominação dos eventos freqüentados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Datas dos eventos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Preço unitário do evento por pessoa</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Custos globais do treinamento por participante</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>É possível definir em &lt;LS&gt;Modificar layout&lt;/&gt; que dados serão exibidos:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Na caixa de diálogo chamada mediante a seleção desta função, as colunas</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>exibidas na exibição em lista serão apresentadas na tabela esquerda e</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>as colunas ocultadas na tabela direita.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ao marcar e pressionar as teclas de controle do cursor é possível</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>determinar que colunas devem ser exibidas. Mediante &lt;LS&gt;Aceitar&lt;/&gt; é</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>possível exibir as modificações efetuadas pelo usuário.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mediante &lt;LS&gt;Gravar&lt;/&gt; é possível gravar este layout e voltar a chamar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>após a modificação da exibição mediante &lt;LS&gt;Selecionar layout&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Maiores informações sobre as possibilidades de exibição em lista</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>encontram-se em &lt;LS&gt;Ajuda&lt;/&gt; na biblioteca SAP em &lt;LS&gt;Introdução ao</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sistema SAP&lt;/&gt; -&gt; &lt;LS&gt;A janela SAP&lt;/&gt; -&gt; &lt;LS&gt;Lista&lt;/&gt; -&gt; &lt;LS&gt;ABAP List</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Viewer (ALV): Grid Control&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHTHIST0</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0017</VERSION>
+      <TXTLINES>00029</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHTHIST0</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00017</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Con este report, puede crear el historial de formación de un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>participante interno o externo, es decir, una lista de todos los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eventos en los que ha participado y/o en los que se ha inscrito.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para este report existe un report anterior RHXTHIST con una imagen de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selección simplificada.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En la imagen de selección, puede seleccionar los &lt;ZH&gt;objetos que se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deben evaluar&lt;/&gt; y el &lt;ZH&gt;período de evaluación&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La &lt;LS&gt;visualización de lista&lt;/&gt; creada mediante el report contiene la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>siguiente información:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>denominación del tipo de evento visitado</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>denominación de los eventos visitados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>fechas del evento</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>precio individual del evento por persona</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>costes totales de perfeccionamiento por participante</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Seleccione los datos que quiere visualizar con &lt;LS&gt;Modificar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>disposición&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En la selección de esta función, las ventanas de diálogo aparecerán con</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>las columnas mostradas en la visualización de lista en la tabla</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>izquierda y las columnas escondidas en la tabla derecha.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Moviendo y seleccionando las flechas, podrá comprobar las columnas que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se van a ver. Con la función &lt;LS&gt;Transferir&lt;/&gt;, puede visualizar las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>modificaciones realizadas.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mediante la función &lt;LS&gt;Grabar&lt;/&gt; puede almacenar esta disposición y</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>después modificarla con &lt;LS&gt;seleccionar disposición&lt;/&gt; y volverla a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pedir cuando así lo requiera.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Encontrará más información sobre las posibilidades de visualización en</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la visualización de la lista bajo &lt;LS&gt;Ayuda&lt;/&gt; en la biblioteca SAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bajo &lt;LS&gt;Introducción en el sistema SAP&lt;/&gt; -&gt; &lt;LS&gt;La ventana SAP&lt;/&gt; -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;LS&gt;Lista&lt;/&gt; -&gt; &lt;LS&gt;List Viewer ABAP (LVA): control Grid&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

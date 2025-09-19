@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZHCM</ARBGB>
+    <MASTERLANG>P</MASTERLANG>
+    <STEXT>Mensagens para HCM</STEXT>
+   </T100A>
+   <I18N_LANGS>
+    <LANGU>P</LANGU>
+   </I18N_LANGS>
+   <T100T>
+    <T100T>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZHCM</ARBGB>
+     <STEXT>Mensagens para HCM</STEXT>
+    </T100T>
+   </T100T>
+   <T100_TEXTS>
+    <item>
+     <SPRSL>P</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>Não foi definida qualquer data para inicio de pagamento de diuturnidade</TEXT>
+    </item>
+    <item>
+     <SPRSL>P</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Erro ao gerar a Declaração Individual de Rendimentos do colaborador &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>P</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>Nº pessoal &amp; não está activo.</TEXT>
+    </item>
+    <item>
+     <SPRSL>P</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>Nº pessoal &amp; não possui email válido.</TEXT>
+    </item>
+    <item>
+     <SPRSL>P</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>Sucesso no Envio da Declaração Individual de Rendimentos do colaborador &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>P</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Erro no Envio da Declaração Individual de Rendimentos do colaborador &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>P</SPRSL>
+     <MSGNR>006</MSGNR>
+     <TEXT>Secção &amp; não existe na tabela de ZHR_SECCAO</TEXT>
+    </item>
+   </T100_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

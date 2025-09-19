@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZHR_RHXTHIST_F</NAME>
+    <SUBC>1</SUBC>
+    <APPL>H</APPL>
+    <RSTAT>P</RSTAT>
+    <RLOAD>D</RLOAD>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>FT1</KEY>
+     <ENTRY>Formatting option</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>MIT</KEY>
+     <ENTRY>With employee history</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>OHN</KEY>
+     <ENTRY>Without employee history</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>Attendee data</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Attendee&apos;s Training History</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHOBJID</KEY>
+     <ENTRY>Attendee</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHSEARK</KEY>
+     <ENTRY>Search term</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHZTR_A</KEY>
+     <ENTRY>All</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHZTR_D</KEY>
+     <ENTRY>Today</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHZTR_F</KEY>
+     <ENTRY>Future</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHZTR_M</KEY>
+     <ENTRY>Current month</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHZTR_P</KEY>
+     <ENTRY>Past</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHZTR_Y</KEY>
+     <ENTRY>Current year</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PCHZTR_Z</KEY>
+     <ENTRY>Other period</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>SEL_BOX</KEY>
+     <ENTRY>Standard selection screen</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>WAERS</KEY>
+     <ENTRY>Currency</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>S</ID>
+       <KEY>WAERS</KEY>
+       <ENTRY>Moeda</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SEL_BOX</KEY>
+       <ENTRY>Tela de seleção standard</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_Z</KEY>
+       <ENTRY>outro período</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_Y</KEY>
+       <ENTRY>ano corrente</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_P</KEY>
+       <ENTRY>Passado</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_M</KEY>
+       <ENTRY>mês atual</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_F</KEY>
+       <ENTRY>Futuro</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_D</KEY>
+       <ENTRY>hoje</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_A</KEY>
+       <ENTRY>tudo</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHSEARK</KEY>
+       <ENTRY>Termo de pesquisa</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHOBJID</KEY>
+       <ENTRY>Participantes</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Histórico de formação de um participante</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T01</KEY>
+       <ENTRY>Dds.particip.</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>OHN</KEY>
+       <ENTRY>S/histórico empregado</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>MIT</KEY>
+       <ENTRY>C/histórico empregados</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>FT1</KEY>
+       <ENTRY>Opção edição</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>FT1</KEY>
+       <ENTRY>Opción de edición</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>MIT</KEY>
+       <ENTRY>con historial empleado</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>OHN</KEY>
+       <ENTRY>sin historial empleado</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>T01</KEY>
+       <ENTRY>Datos particip.</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Historial de formación de un participante</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHOBJID</KEY>
+       <ENTRY>Participante</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHSEARK</KEY>
+       <ENTRY>Concepto de búsqueda</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_A</KEY>
+       <ENTRY>todo</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_D</KEY>
+       <ENTRY>Hoy</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_F</KEY>
+       <ENTRY>Futuro</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_M</KEY>
+       <ENTRY>Mes actual</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_P</KEY>
+       <ENTRY>Pasado</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_Y</KEY>
+       <ENTRY>año en curso</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PCHZTR_Z</KEY>
+       <ENTRY>otro período</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SEL_BOX</KEY>
+       <ENTRY>Imagen de selección estándar</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>WAERS</KEY>
+       <ENTRY>Moneda</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHXTHIST_F</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00040</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHXTHIST_F</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit diesem Report können Sie die Ausbildungshistorie eines internen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>oder externen Teilnehmers erstellen, d.h. eine Liste aller</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Veranstaltungen, die der betreffende Teilnehmer besucht hat und/oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf die er gebucht ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Auf dem Selektionsbild können Sie die &lt;ZH&gt;auszuwertenden Objekte&lt;/&gt; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>den &lt;ZH&gt;Auswertungszeitraum&lt;/&gt; auswählen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>Standardselektionsbild</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieser Parameter ist kein Selektionsparameter. Wenn Sie diesen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Parameter markieren und &lt;LS&gt;Ausführen&lt;/&gt; wählen, wird noch vor</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Reportausführung auf das umfangreichere Selektionsbild des Hauptreports</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>RHTHIST0 verzweigt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Hinweis&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Auf dem Selektionsbild des Hauptreports haben Sie beispielsweise die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Möglichkeit, über den Status Objekte für die Auswertung zu selektieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>In der Regel bietet jedoch das Selektionsbild des Vorreports</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausreichende Möglichkeiten zur Datenselektion. In diesem Fall markieren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sie diesen Parameter nicht und wählen Sie nach Auswahl der gewünschten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Selektionsparameter &lt;LS&gt;Ausführen&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das durch den Report erstellte &lt;ZH&gt;Listbild&lt;/&gt; enthält beispielsweise</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>folgende Informationen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Bezeichnung der besuchten Veranstaltungstypen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Bezeichnung der besuchten Veranstaltungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Veranstaltungstermine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Veranstaltungseinzelpreis pro Person</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Weiterbildungsgesamtkosten pro Teilnehmer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Welche Daten Sie angezeigt bekommen, können Sie unter &lt;LS&gt;Layout ändern</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; einstellen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In dem durch Wahl dieser Funktion aufgerufenen Dialogfenster werden in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der linken Tabelle die im Listbild angezeigten Spalten aufgeführt, in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der rechten Tabelle die ausgeblendeten Spalten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Durch Markieren und Betätigen der Pfeiltasten können Sie bestimmen,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>welche Spalten angezeigt werden. Durch &lt;LS&gt;Übernehmen&lt;/&gt; können Sie die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>von Ihnen gemachten Änderungen anzeigen lassen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Über &lt;LS&gt;Sichern&lt;/&gt; können Sie dieses Layout speichern und nach</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verändern der Anzeige über &lt;LS&gt;Layout auswählen&lt;/&gt; nach Belieben wieder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufrufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Informationen zu den Anzeigemöglichkeiten im Listbild finden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sie unter &lt;LS&gt;Hilfe&lt;/&gt; in der SAP Bibliothek unter &lt;LS&gt;Einführung in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>das SAP System&lt;/&gt; -&gt; &lt;LS&gt;Das SAP Fenster&lt;/&gt; -&gt; &lt;LS&gt;Liste&lt;/&gt; -&gt; &lt;LS&gt;ABAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>List Viewer (ALV): Grid Control&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHXTHIST_F</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <TXTLINES>00033</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHXTHIST_F</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This report creates a training history for an internal or external</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>attendee. A training history is a list of all training events that the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>attendee already has attended or is booked to attend.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The report output depends on the &lt;ZH&gt;objects selected for reporting&lt;/&gt;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>on the &lt;ZH&gt;reporting period&lt;/&gt;, and on the report parameters you set.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>Standard selection screen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This is not a data selection parameter. If you select this indicator</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and choose &lt;LS&gt;Execute&lt;/&gt;, then before the report is executed, it takes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>you to the extended selection screen of the main report RHTHIST0.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Note&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>On the selection screen of the main report, you can search for objects</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>by, for example, status. As a rule, it is not necessary to go to the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>main report since the pre-report offers sufficient selection options.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Do not select this indicator if you do not want to access the main</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>report before choosing &lt;LS&gt;Execute&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The report&apos;s &lt;zh&gt;list screen&lt;/&gt; contains the following information:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Name of business event types attended</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Name of business events attended</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Business event dates</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Individual price per person</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Sum total of further training costs per attendee</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You select the data you want displayed under &lt;LS&gt;Change layout&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>When you choose this function, a dialog box appears with the columns</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>that are displayed on the list screen in the left table, and the hidden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>columns in the right table.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The arrows let you determine what columns are displayed. To transfer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the changed layout, choose &lt;LS&gt;Transfer&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To save the layout, choose &lt;LS&gt;Save layout&lt;/&gt;. You can call this layout</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>as required by choosing &lt;LS&gt;Choose layout &lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can find more information about display options on the list screen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>under &lt;LS&gt;Help&lt;/&gt; in the SAP Library by choosing &lt;LS&gt;Getting Started&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>-&gt; &lt;LS&gt;The SAP Window&lt;/&gt; -&gt; &lt;LS&gt;List&lt;/&gt; -&gt; &lt;LS&gt;ABAP List Viewer (ALV):</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Grid Control&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHXTHIST_F</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <TXTLINES>00038</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHXTHIST_F</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Com este report é possível criar o histórico de formação de um</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>participante interno ou externo, ou seja, uma lista de todos os eventos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>em que o participante em questão participou e/ou está inscrito.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Além da seleção dos &lt;ZH&gt;Objetos a serem analisados&lt;/&gt; e do &lt;ZH&gt;Período</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de análise&lt;/&gt;, é possível selecionar, mediante os seguintes parâmetros,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>que dados serão analisados:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>Tela de seleção standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este parâmetro não é um parâmetro de seleção. Se este parâmetro for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>marcado e &lt;LS&gt;Executar&lt;/&gt; for selecionado, será ramificado para a tela</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de seleção mais extensa do report principal RHTHIST0, ainda antes da</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>execução do report.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Nota&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Na tela de seleção do report principal existe a possibilidade de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selecionar, por exemplo, objetos para a análise mediante o status.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Contudo, a tela de seleção do report prévio oferece geralmente</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>possibilidades suficientes para a seleção de dados. Neste caso, não</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>marcar este parâmetro e selecionar &lt;LS&gt;Executar&lt;/&gt; após a seleção dos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>parâmetros de seleção pretendidos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A &lt;LS&gt;Exibição de lista&lt;/&gt; criada mediante o report contém, por</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>exemplo, as seguintes informações:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Denominação dos tipos de evento freqüentados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Denominação de eventos freqüentados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Datas dos eventos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Preço unitário do evento por pessoa</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Custo global do treinamento por participante</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Em &lt;LS&gt;Modificar layout&lt;/&gt; é possível definir que dados serão exibidos:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Na caixa de diálogo chamada mediante a seleção desta função, as colunas</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>exibidas na exibição em lista serão apresentadas na tabela esquerda e</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>as colunas ocultadas na tabela direita.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ao marcar e pressionar as teclas de controle do cursor é possível</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>determinar que colunas serão exibidas. Mediante &lt;LS&gt;Aceitar&lt;/&gt; é</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>possível exibir as modificações efetuadas pelo usuário.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mediante &lt;LS&gt;Gravar&lt;/&gt; é possível gravar este layout e voltar a chamar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>após a modificação da exibição mediante &lt;LS&gt;Selecionar layout&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Maiores informações sobre as possibilidades de exibição em lista</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>encontram-se em &lt;LS&gt;Ajuda&lt;/&gt; na biblioteca SAP em &lt;LS&gt;Introdução ao</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sistema SAP&lt;/&gt; -&gt; &lt;LS&gt;A janela SAP&lt;/&gt; -&gt; &lt;LS&gt;Lista&lt;/&gt; -&gt; &lt;LS&gt;ABAP List</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Viewer (ALV): Grid Control&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZHR_RHXTHIST_F</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <TXTLINES>00040</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZHR_RHXTHIST_F</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Con este report puede crear el historial de formación de un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>participante interno o externo, es decir, una lista de todos los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eventos a los que ha asistido y/o está inscrito el participante en</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>cuestión.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En la imagen de selección puede seleccionar los &lt;ZH&gt;objetos que se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deben evaluar&lt;/&gt; y el &lt;ZH&gt;período de evaluación&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>Imagen de selección estándar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este parámetro no es un parámetro de selección. Si fija este parámetro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>y selecciona &lt;LS&gt;Ejecutar&lt;/&gt;, antes de la ejecución del report se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bifurca a la imagen de selección ampliada del report principal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>RHTHIST0.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Nota&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>En la imagen de selección del report principal tiene la posibilidad de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>seleccionar, mediante el status, objetos para la evaluación. Sin</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>embargo y, en general, la imagen de selección del report previo ofrece</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posibilidades suficientes para seleccionar datos. En este caso no</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>marque este parámetro y seleccione &lt;LS&gt;Ejecutar&lt;/&gt; tras seleccionar el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>parámetro de selección deseado.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La &lt;LS&gt;visualización de lista&lt;/&gt; creada por el report contiene la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>siguiente información:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>denominación de los tipos de evento a los que ha asistido</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>denominación de los eventos a los que ha asistido</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>fecha del evento</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>precio individual del evento por persona</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>costes totales del perfeccionamiento por participante</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Seleccione los datos que quiere visualizar con &lt;LS&gt;Modificar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>disposición&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En la selección de esta función, las ventanas de diálogo aparecerán con</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>las columnas mostradas en la visualización de lista en la tabla</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>izquierda y las columnas escondidas en la tabla derecha.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Moviendo y selecionando las flechas, podrá comprobar las columnas que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se van a ver. Con &lt;LS&gt;Transferir&lt;/&gt;, podrá visualizar las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>modificaciones realizadas.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Con la función &lt;LS&gt;Grabar&lt;/&gt; puede almacenar la disposición y después</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>modificarla con &lt;LS&gt;seleccionar disposición&lt;/&gt; y volverla a pedir</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>cuando así lo desee.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Encontrará más información sobre las posibilidades de visualización en</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la visualización de la lista bajo &lt;LS&gt;Ayuda&lt;/&gt; de la biblioteca SAP en</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;LS&gt;Introducción en el sistema SAP&lt;/&gt; -&gt; &lt;LS&gt;La ventana SAP&lt;/&gt; -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;LS&gt;Lista&lt;/&gt; -&gt; &lt;LS&gt;List Viewer ABAP (LVA): control Grid&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
