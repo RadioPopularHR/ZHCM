@@ -1,0 +1,22 @@
+V_PERNR	= W_OUTPUT-PERNR.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
